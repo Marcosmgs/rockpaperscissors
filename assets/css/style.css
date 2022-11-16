@@ -24,6 +24,7 @@ h1 {
 }
 
 .score-panel {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     border: 2px solid black;
     width: 150px;
@@ -35,4 +36,16 @@ h1 {
     position: absolute;
     top: -30px;
     right: 50px;
+}
+
+.user-badge {
+    position: absolute;
+    top: 10px;
+    left: -65px;
+}
+
+.comp-badge {
+    position: absolute;
+    top: 10px;
+    right: -85px;
 }
