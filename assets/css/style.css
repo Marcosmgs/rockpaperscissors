@@ -27,5 +27,12 @@ h1 {
     text-align: center;
     border: 2px solid black;
     width: 150px;
-    margin: 25px auto;
+    margin: 50px auto;
+    position: relative;
+}
+
+.score-head {
+    position: absolute;
+    top: -30px;
+    right: 50px;
 }
