@@ -8,5 +8,18 @@
 
 body {
     font-family: 'Expletus Sans', cursive;
-    background-color: #DDEDFA;
+    background-color: #88EAFA;
 }
+
+header {
+    background-color: #FFD15E;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #343434;
+}
+
