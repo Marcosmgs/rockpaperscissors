@@ -7,46 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/style.css">
+        
     <title>Rock, Paper, Scissors</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>Rock, Paper, Scissors</h1>
     </header>
 
-    <div>
-        <h2>Score</h2>
-        <div>You</div>
-        <div>Comp</div>
-        <span>0</span> X <span>0</span>
+    <div id="score-area" class="score-panel">
+        <h2 class="score-head">Score</h2>
+        <div class="user-badge">You <i class="far fa-smile-beam"></i></div>
+        <div class="comp-badge">Comp <i class="fas fa-desktop"></i></div>
+        <span id="user-score">0</span> X <span id="comp-score">0</span>
     </div>
 
-    <div>
-        <div>User Img</div>
-        <div>Result</div>
-        <div>Comp Img</div>
+    <div id="results-area" class="results">
+        <div id="user-image" class="user-result">User Img</div>
+        <div id="result-text" class="message-result">Result</div>
+        <div id="comp-image" class="comp-result">Comp Img</div>
     </div>
 
-    <p>Choose your move...</p>
+    <p id="call-move" class="call-action">Choose your move...</p>
 
-    <div>
-        <button>rock</button>
-        <button>paper</button>
-        <button>scissors</button>
+    <div id="game-control" class="control">
+        <button id="rock" class="btn-choices btn-rock">
+            <i class="fas fa-hand-rock"></i>
+        </button>
+        <button id="paper" class="btn-choices btn-paper">
+            <i class="fas fa-hand-paper"></i>
+        </button>
+        <button id="scissors" class="btn-choices btn-scissors">
+            <i class="fas fa-hand-scissors"></i>
+        </button>
     </div>
 
-    <div>
-        <button>start</button>
+    <div class="start-game">
+        <button id="start-btn" class="start">start</button>
     </div>
 
-    <div>
-        <button>reset</button>
+    <div class="reset-game">
+        <button id="reset-btn" class="reset">reset</button>
     </div>
 
-    <footer>
+    <footer id="footer">
         Footer Game Rules/Rock, Paper, Scissors
     </footer>
+
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/5aaf6a9662.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
