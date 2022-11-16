@@ -5,3 +5,8 @@
     padding: 0;
     border: 0;
 }
+
+body {
+    font-family: 'Expletus Sans', cursive;
+    background-color: #DDEDFA;
+}
