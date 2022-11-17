@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&family=Open+Sans&display=swap');
 
+/* >>> Set All Margins, Paddings and Borders to 0 <<< */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-
+/* >>> Body Styles <<< */
 body {
     font-family: 'Expletus Sans', cursive;
     background-color: #88EAFA;
 }
 
+/* >>> Header Styles <<< */
 header {
     background-color: #FFD15E;
     padding: 20px;
     text-align: center;
 }
 
+/* >>> H1 Element Styles <<< */
 h1 {
     font-size: 2.5rem;
     font-weight: bolder;
     color: #343434;
 }
 
+/* >>> Score Area Styles <<< */
 .score-panel {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -49,3 +53,47 @@ h1 {
     top: 10px;
     right: -85px;
 }
+
+/* >>> Result Area Styles <<< */
+.results {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    clear: left;
+}
+
+.user-result {
+    position: absolute;
+    left: -125px;
+}
+
+.message-result {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.comp-result {
+    position: absolute;
+    top: 0;
+    right: -125px;
+ }
+
+#user-image {
+    width: 150px;
+    height: 150px;
+}
+
+#comp-image {
+    width: 150px;
+    height: 150px;
+}
+
+/* >>> Call For Action Message Style 
+.call-action {
+    position: absolute;
+    text-align: center;
+}
+*/
