@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     border: 2px solid black;
     width: 150px;
-    margin: 50px auto;
+    margin: 30px auto;
     position: relative;
 }
 
@@ -91,9 +91,9 @@ h1 {
     height: 150px;
 }
 
-/* >>> Call For Action Message Style 
+/* >>> Call For Action Message Style <<< */
 .call-action {
-    position: absolute;
     text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
 }
-*/
