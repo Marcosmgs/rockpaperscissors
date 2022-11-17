@@ -136,6 +136,7 @@ h1 {
 /* >>> Start Button Style <<< */
 .start-game {
     text-align: center;
+    padding-top: 75px;
 }
 
 .start {
@@ -189,9 +190,12 @@ footer {
 
     text-align: center;
     color: #fafafa;
-    padding-top: 5px;
+    padding: 10px;
     background-color: #343434;
 }
 
-
+/* >>> Class to Display and Hide Elements <<< */
+.hide {
+    display: none;
+}
 
