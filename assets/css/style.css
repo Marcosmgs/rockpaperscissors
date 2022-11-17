@@ -133,7 +133,7 @@ h1 {
     background-color: blue;
 }
 
-/* Start Button Style */
+/* >>> Start Button Style <<< */
 .start-game {
     text-align: center;
 }
@@ -155,4 +155,28 @@ h1 {
     border: 3px solid #fafafa;
     color: #FFD15E;
 }
+
+/* >>> Reset Button Style <<< */
+.reset-game {
+    text-align: center;
+}
+
+.reset {
+    font-size: 2rem;
+    padding: 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #FFD15E;
+
+    border: 2px solid #343434;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    border: 3px solid #fafafa;
+    color: darkcyan;
+}
+
+
+
 
