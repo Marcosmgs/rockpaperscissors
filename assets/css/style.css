@@ -120,7 +120,7 @@ h1 {
     border: 3px solid #fafafa;
 }
 
-/*buttons glow colors for right, wrong answers
+/* buttons glow colors for right, wrong answers */
 .correct-green {
     background-color: greenyellow;
 }
@@ -132,4 +132,27 @@ h1 {
 .draw-blue {
     background-color: blue;
 }
-*/
+
+/* Start Button Style */
+.start-game {
+    text-align: center;
+}
+
+.start {
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: lightcoral;
+
+    border: 2px solid #343434;
+    border-radius: 5px;
+}
+
+.start:hover {
+    border: 3px solid #fafafa;
+    color: #FFD15E;
+}
+
