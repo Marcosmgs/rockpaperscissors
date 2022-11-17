@@ -97,3 +97,39 @@ h1 {
     padding: 5px;
     font-size: 1.5rem;
 }
+
+/* >>> Buttons User Options Style */
+.control {
+    width: 375px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.btn-choices {
+    font-size: 3rem;
+    padding: 15px;
+    margin: 0 20px;
+
+    border: 2px solid #343434;
+    box-shadow: 0 0 10px 2px;
+    border-radius: 50%;
+}
+
+.btn-choices:hover {
+    border: 3px solid #fafafa;
+}
+
+/*buttons glow colors for right, wrong answers
+.correct-green {
+    background-color: greenyellow;
+}
+
+.wrong-red {
+    background-color: red;
+}
+
+.draw-blue {
+    background-color: blue;
+}
+*/
