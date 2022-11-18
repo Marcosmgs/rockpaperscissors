@@ -9,6 +9,10 @@ const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
 const userScoreSpan = document.getElementById("user-score");
 const compScoreSpan = document.getElementById("comp-score");
+const resultText = document.getElementById("result-text");
+const resultCompImage = document.getElementById("comp-image");
+const resultUserImage = document.getElementById("user-image");
+
 let userScore = 0;
 let compScore = 0;
 
@@ -18,10 +22,10 @@ startBtn.addEventListener('click', startGame);
 rockButton.addEventListener('click', function() {
     gameOn("rock");
 })
-rockButton.addEventListener('click', function() {
+paperButton.addEventListener('click', function() {
     gameOn("paper");
 })
-rockButton.addEventListener('click', function() {
+scissorsButton.addEventListener('click', function() {
     gameOn("scissors");
 })
 
@@ -54,30 +58,43 @@ function gameOn(userChoice) {
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-            loser(userChoice, computerChoice);
+            loser();
             break;
         case "paperpaper":
         case "scissorsscissors":
         case "rockrock":
-            draw(userChoice, computerChoice);
+            draw();
             break;
     }
 }
-
 
 /* Generate different text results and images based on different win scenarios and also increments user score*/
 function winner(userChoice, computerChoice) {
     userScore++;
     userScoreSpan.innerHTML = userScore;
-    compScoreSpan.innerHTML - compScore;
+    compScoreSpan.innerHTML = compScore;
 
+    if (userChoice === "paper" && computerChoice === "rock") {
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`
+    }
+    if (userChoice === "rock" && computerChoice === "scissors") {  
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`           
+    }
+    if (userChoice === "scissors" && computerChoice === "paper") {     
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`     
+    }
+
+    resultText.innerHTML = "You Win";
 
 }
 
-function loser(userChoice, computerChoice) {
-
+function loser() {
+    console.log("You Lost :(");
 }
 
-function draw(userChoice, computerChoice) {
-   
+function draw() {
+   console.log("It is a Draw");
 }
