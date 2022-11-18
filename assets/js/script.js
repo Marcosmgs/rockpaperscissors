@@ -49,17 +49,30 @@ function gameOn(userChoice) {
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-            console.log("You Lost :(");
+            loser(userChoice, computerChoice);
             break;
         case "paperpaper":
         case "scissorsscissors":
         case "rockrock":
-            console.log("It is a Draw! :O");
+            draw(userChoice, computerChoice);
             break;
     }
 }
 
 function winner(userChoice, computerChoice) {
+    console.log("Winner :)");
+    console.log(userChoice);
+    console.log(computerChoice);
+}
+
+function loser(userChoice, computerChoice) {
+    console.log("Loser :(");
+    console.log(userChoice);
+    console.log(computerChoice);
+}
+
+function draw(userChoice, computerChoice) {
+    console.log("Draw :|");
     console.log(userChoice);
     console.log(computerChoice);
 }
