@@ -7,8 +7,13 @@ const resetBtn = document.getElementById("reset-btn");
 const rockButton = document.getElementById("rock");
 const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
+const userScoreSpan = document.getElementById("user-score");
+const compScoreSpan = document.getElementById("comp-score");
+let userScore = 0;
+let compScore = 0;
 
 startBtn.addEventListener('click', startGame);
+
 /* Add Listeners for User Choice Buttons and pass paramenters to function gameOn */
 rockButton.addEventListener('click', function() {
     gameOn("rock");
@@ -59,20 +64,20 @@ function gameOn(userChoice) {
     }
 }
 
+
+/* Generate different text results and images based on different win scenarios and also increments user score*/
 function winner(userChoice, computerChoice) {
-    console.log("Winner :)");
-    console.log(userChoice);
-    console.log(computerChoice);
+    userScore++;
+    userScoreSpan.innerHTML = userScore;
+    compScoreSpan.innerHTML - compScore;
+
+
 }
 
 function loser(userChoice, computerChoice) {
-    console.log("Loser :(");
-    console.log(userChoice);
-    console.log(computerChoice);
+
 }
 
 function draw(userChoice, computerChoice) {
-    console.log("Draw :|");
-    console.log(userChoice);
-    console.log(computerChoice);
+   
 }
