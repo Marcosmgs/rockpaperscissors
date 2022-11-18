@@ -92,6 +92,10 @@ function winner(userChoice, computerChoice) {
 }
 
 function loser() {
+    compScore++;
+    userScoreSpan.innerHTML = userScore;
+    compScoreSpan.innerHTML = compScore;
+
     console.log("You Lost :(");
 }
 
