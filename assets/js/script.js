@@ -77,14 +77,20 @@ function winner(userChoice, computerChoice) {
     if (userChoice === "paper" && computerChoice === "rock") {
         resultUserImage.src = `assets/images/${userChoice}.png`
         resultCompImage.src = `assets/images/${computerChoice}.png`
+        paperButton.classList.add('correct-green');
+        setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);
     }
     if (userChoice === "rock" && computerChoice === "scissors") {  
         resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`           
+        resultCompImage.src = `assets/images/${computerChoice}.png`
+        rockButton.classList.add('correct-green');
+        setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);           
     }
     if (userChoice === "scissors" && computerChoice === "paper") {     
         resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`     
+        resultCompImage.src = `assets/images/${computerChoice}.png`   
+        scissorsButton.classList.add('correct-green');
+        setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);  
     }
 
     resultText.innerHTML = "You Win";
