@@ -63,7 +63,7 @@ function gameOn(userChoice) {
         case "paperpaper":
         case "scissorsscissors":
         case "rockrock":
-            draw();
+            draw(userChoice, computerChoice);
             break;
     }
 }
@@ -90,6 +90,7 @@ function winner(userChoice, computerChoice) {
     resultText.innerHTML = "You Win";
 }
 
+/* Generate different text results and images based on different user lost scenarios and also increments computer score */
 function loser(userChoice, computerChoice) {
     compScore++;
     userScoreSpan.innerHTML = userScore;
@@ -111,7 +112,9 @@ function loser(userChoice, computerChoice) {
     resultText.innerHTML = "You Lost";
 }
 
-function draw() {
+
+/* Generate different images based on different game draw scenarios */
+function draw(userChoice, computerChoice) {
 
     if (userChoice === "rock" && computerChoice === "rock") {
         resultUserImage.src = `assets/images/${userChoice}.png`
