@@ -84,13 +84,13 @@ function winner(userChoice, computerChoice) {
         resultUserImage.src = `assets/images/${userChoice}.png`
         resultCompImage.src = `assets/images/${computerChoice}.png`
         rockButton.classList.add('correct-green');
-        setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);           
+        setTimeout(function() { rockButton.classList.remove('correct-green') }, 350);           
     }
     if (userChoice === "scissors" && computerChoice === "paper") {     
         resultUserImage.src = `assets/images/${userChoice}.png`
         resultCompImage.src = `assets/images/${computerChoice}.png`   
         scissorsButton.classList.add('correct-green');
-        setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);  
+        setTimeout(function() { scissorsButton.classList.remove('correct-green') }, 350);  
     }
 
     resultText.innerHTML = "You Win";
