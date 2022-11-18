@@ -16,6 +16,7 @@ const resultUserImage = document.getElementById("user-image");
 let userScore = 0;
 let compScore = 0;
 
+resetBtn.addEventListener('click', resetGame);
 startBtn.addEventListener('click', startGame);
 
 /* Add Listeners for User Choice Buttons and pass paramenters to function gameOn */
@@ -37,6 +38,15 @@ function startGame() {
     moveCallText.classList.remove('hide');
     buttonsUserOptions.classList.remove('hide');
     resetBtn.classList.remove('hide');
+}
+/* Reset Game to Initial Screen and Score */
+function resetGame() {
+    userScore = 0;
+    compScore = 0;
+    userScoreSpan.innerHTML = userScore;
+    compScoreSpan.innerHTML = compScore;
+    var emoji = String.fromCodePoint(0x1f340);
+    resultText.innerHTML = `Good Luck! ${emoji}`;
 }
 
 /* Generates an random choice every time the fuctions is called */
