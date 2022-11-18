@@ -75,20 +75,20 @@ function winner(userChoice, computerChoice) {
     compScoreSpan.innerHTML = compScore;
 
     if (userChoice === "paper" && computerChoice === "rock") {
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
         paperButton.classList.add('correct-green');
         setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);
     }
     if (userChoice === "rock" && computerChoice === "scissors") {  
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
         rockButton.classList.add('correct-green');
         setTimeout(function() { rockButton.classList.remove('correct-green') }, 350);           
     }
     if (userChoice === "scissors" && computerChoice === "paper") {     
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`   
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`; 
         scissorsButton.classList.add('correct-green');
         setTimeout(function() { scissorsButton.classList.remove('correct-green') }, 350);  
     }
@@ -103,16 +103,22 @@ function loser(userChoice, computerChoice) {
     compScoreSpan.innerHTML = compScore;
     
     if (userChoice === "rock" && computerChoice === "paper") {
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
+        rockButton.classList.add('wrong-red');
+        setTimeout(function() { rockButton.classList.remove('wrong-red') }, 350);
     }
     if (userChoice === "scissors" && computerChoice === "rock") {  
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`           
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
+        scissorsButton.classList.add('wrong-red');
+        setTimeout(function() { scissorsButton.classList.remove('wrong-red') }, 350);           
     }
     if (userChoice === "paper" && computerChoice === "scissors") {     
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`     
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
+        paperButton.classList.add('wrong-red');
+        setTimeout(function() { paperButton.classList.remove('wrong-red') }, 350);
     }
 
     resultText.innerHTML = "You Lost";
