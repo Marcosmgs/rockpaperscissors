@@ -131,14 +131,20 @@ function draw(userChoice, computerChoice) {
     if (userChoice === "rock" && computerChoice === "rock") {
         resultUserImage.src = `assets/images/${userChoice}.png`
         resultCompImage.src = `assets/images/${computerChoice}.png`
+        rockButton.classList.add('draw-blue');
+        setTimeout(function() { rockButton.classList.remove('draw-blue') }, 350);
     }
     if (userChoice === "paper" && computerChoice === "paper") {  
         resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`           
+        resultCompImage.src = `assets/images/${computerChoice}.png`
+        paperButton.classList.add('draw-blue');
+        setTimeout(function() { paperButton.classList.remove('draw-blue') }, 350);           
     }
     if (userChoice === "scissors" && computerChoice === "scissors") {     
         resultUserImage.src = `assets/images/${userChoice}.png`
         resultCompImage.src = `assets/images/${computerChoice}.png`     
+        scissorsButton.classList.add('draw-blue');
+        setTimeout(function() { scissorsButton.classList.remove('draw-blue') }, 350);
     }
 
     resultText.innerHTML = "It's a Draw";
