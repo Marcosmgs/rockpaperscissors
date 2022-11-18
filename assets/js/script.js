@@ -112,5 +112,19 @@ function loser(userChoice, computerChoice) {
 }
 
 function draw() {
-   console.log("It is a Draw");
+
+    if (userChoice === "rock" && computerChoice === "rock") {
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`
+    }
+    if (userChoice === "paper" && computerChoice === "paper") {  
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`           
+    }
+    if (userChoice === "scissors" && computerChoice === "scissors") {     
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`     
+    }
+
+    resultText.innerHTML = "It's a Draw";
 }
