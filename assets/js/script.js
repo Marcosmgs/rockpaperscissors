@@ -58,7 +58,7 @@ function gameOn(userChoice) {
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-            loser();
+            loser(userChoice, computerChoice);
             break;
         case "paperpaper":
         case "scissorsscissors":
@@ -88,15 +88,27 @@ function winner(userChoice, computerChoice) {
     }
 
     resultText.innerHTML = "You Win";
-
 }
 
-function loser() {
+function loser(userChoice, computerChoice) {
     compScore++;
     userScoreSpan.innerHTML = userScore;
     compScoreSpan.innerHTML = compScore;
+    
+    if (userChoice === "rock" && computerChoice === "paper") {
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`
+    }
+    if (userChoice === "scissors" && computerChoice === "rock") {  
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`           
+    }
+    if (userChoice === "paper" && computerChoice === "scissors") {     
+        resultUserImage.src = `assets/images/${userChoice}.png`
+        resultCompImage.src = `assets/images/${computerChoice}.png`     
+    }
 
-    console.log("You Lost :(");
+    resultText.innerHTML = "You Lost";
 }
 
 function draw() {
