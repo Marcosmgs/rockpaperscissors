@@ -4,12 +4,16 @@ const resultAreaDiv = document.getElementById("results-area");
 const moveCallText = document.getElementById("call-move");
 const buttonsUserOptions = document.getElementById("game-control");
 const resetBtn = document.getElementById("reset-btn");
+const rockButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
 
 
-startBtn.addEventListener('click', gameOn);
+
+startBtn.addEventListener('click', startGame);
 
 
-function gameOn() {
+function startGame() {
     startBtn.classList.add('hide');
     scoreAreaDiv.classList.remove('hide');
     resultAreaDiv.classList.remove('hide');
