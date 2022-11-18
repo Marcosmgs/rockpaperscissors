@@ -9,17 +9,18 @@ const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
 
 startBtn.addEventListener('click', startGame);
+/* Add Listeners for User Choice Buttons and pass paramenters to function gameOn */
+rockButton.addEventListener('click', function() {
+    gameOn("rock");
+})
+rockButton.addEventListener('click', function() {
+    gameOn("paper");
+})
+rockButton.addEventListener('click', function() {
+    gameOn("scissors");
+})
 
-rockButton.addEventListener('click', function() {
-    gameOn(rock);
-})
-rockButton.addEventListener('click', function() {
-    gameOn(paper);
-})
-rockButton.addEventListener('click', function() {
-    gameOn(scissors);
-})
-
+/* Set Initial Game Screen  */
 function startGame() {
     startBtn.classList.add('hide');
     scoreAreaDiv.classList.remove('hide');
@@ -29,3 +30,36 @@ function startGame() {
     resetBtn.classList.remove('hide');
 }
 
+/* Generates an random choice every time the fuctions is called */
+function createCompChoice() {
+    let options = ['rock', 'paper', 'scissors'];
+    let randomOption = (Math.floor(Math.random() * 3));
+    return options[randomOption];
+}
+
+/* Set game choices to respective fuctions for each game senario based on user and comp choices */
+function gameOn(userChoice) {
+    let computerChoice = createCompChoice();
+    switch (userChoice + computerChoice) {
+        case "paperrock":
+        case "scissorspaper":
+        case "rockscissors":
+            winner(userChoice, computerChoice);
+            break;
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
+            console.log("You Lost :(");
+            break;
+        case "paperpaper":
+        case "scissorsscissors":
+        case "rockrock":
+            console.log("It is a Draw! :O");
+            break;
+    }
+}
+
+function winner(userChoice, computerChoice) {
+    console.log(userChoice);
+    console.log(computerChoice);
+}
