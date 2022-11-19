@@ -1,6 +1,8 @@
 const startBtn = document.getElementById("start-btn");
+const startBtnDiv = document.getElementById("startDiv");
 const scoreAreaDiv = document.getElementById("score-area");
 const resultAreaDiv = document.getElementById("results-area");
+const footer = document.getElementById("footer");
 const moveCallText = document.getElementById("call-move");
 const buttonsUserOptions = document.getElementById("game-control");
 const resetBtn = document.getElementById("reset-btn");
@@ -32,12 +34,13 @@ scissorsButton.addEventListener('click', function() {
 
 /* Set Initial Game Screen  */
 function startGame() {
-    startBtn.classList.add('hide');
+    startBtnDiv.classList.add('hide');
     scoreAreaDiv.classList.remove('hide');
     resultAreaDiv.classList.remove('hide');
     moveCallText.classList.remove('hide');
     buttonsUserOptions.classList.remove('hide');
     resetBtn.classList.remove('hide');
+    footer.classList.add('hide');
 }
 /* Reset Game to Initial Screen and Score */
 function resetGame() {
