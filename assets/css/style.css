@@ -110,7 +110,7 @@ h1 {
 /* >>> Call For Action Message Style <<< */
 .call-action {
     text-align: center;
-    padding: 5px;
+    padding: 25px 0px 5px;
     font-size: 1.5rem;
 }
 
