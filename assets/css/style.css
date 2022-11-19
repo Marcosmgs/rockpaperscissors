@@ -83,7 +83,7 @@ h1 {
 .message-result {
     padding-top: 50px;
     padding-bottom: 75px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -96,11 +96,15 @@ h1 {
 #user-image {
     width: 150px;
     height: 150px;
+
+    border-radius: 5px;
 }
 
 #comp-image {
     width: 150px;
     height: 150px;
+
+    border-radius: 5px;
 }
 
 /* >>> Call For Action Message Style <<< */
