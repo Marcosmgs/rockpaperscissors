@@ -48,8 +48,9 @@ function resetGame() {
     compScore = 0;
     userScoreSpan.innerHTML = userScore;
     compScoreSpan.innerHTML = compScore;
-    var emoji = String.fromCodePoint(0x1f340);
-    resultText.innerHTML = `Good Luck! ${emoji}`;
+    resultUserImage.src = `assets/images/game-image.png`;
+    resultCompImage.src = `assets/images/game-image.png`;
+    resultText.innerHTML = "Good Luck!";
 }
 
 /* Generates an random choice every time the fuctions is called */
