@@ -216,3 +216,35 @@ footer {
     display: none;
 }
 
+/* For medium screen sizes from 450px wide and down */
+@media screen and (max-width: 450px) {
+    .call-action {
+        padding: 25px 0px 5px;
+    }
+
+    .message-result {
+        padding-top: 30px;
+    }
+    
+    #comp-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    #user-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-result {
+        left: -75px;
+    }
+
+    .comp-result {
+        position: absolute;
+        top: 0;
+        right: -75px;
+    }
+}
+
+
