@@ -274,6 +274,10 @@ footer {
         height: 75px;
     }
 
+    .message-result {
+        font-size: 1rem;
+    }    
+
     .score-panel {
         width: 100px;
     }
