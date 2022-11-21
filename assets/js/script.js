@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const startBtn = document.getElementById("start-btn");
 const startBtnDiv = document.getElementById("startDiv");
 const scoreAreaDiv = document.getElementById("score-area");
@@ -22,15 +23,15 @@ resetBtn.addEventListener('click', resetGame);
 startBtn.addEventListener('click', startGame);
 
 /* Add Listeners for User Choice Buttons and pass paramenters to function gameOn */
-rockButton.addEventListener('click', function() {
+rockButton.addEventListener('click', function () {
     gameOn("rock");
-})
-paperButton.addEventListener('click', function() {
+});
+paperButton.addEventListener('click', function () {
     gameOn("paper");
-})
-scissorsButton.addEventListener('click', function() {
+});
+scissorsButton.addEventListener('click', function () {
     gameOn("scissors");
-})
+});
 
 /* Set Initial Game Screen  */
 function startGame() {
@@ -92,19 +93,25 @@ function winner(userChoice, computerChoice) {
         resultUserImage.src = `assets/images/${userChoice}.png`;
         resultCompImage.src = `assets/images/${computerChoice}.png`;
         paperButton.classList.add('correct-green');
-        setTimeout(function() { paperButton.classList.remove('correct-green') }, 350);
+        setTimeout(function () {
+            paperButton.classList.remove('correct-green');
+        }, 350);
     }
-    if (userChoice === "rock" && computerChoice === "scissors") {  
+    if (userChoice === "rock" && computerChoice === "scissors") {
         resultUserImage.src = `assets/images/${userChoice}.png`;
         resultCompImage.src = `assets/images/${computerChoice}.png`;
         rockButton.classList.add('correct-green');
-        setTimeout(function() { rockButton.classList.remove('correct-green') }, 350);           
+        setTimeout(function () {
+            rockButton.classList.remove('correct-green');
+        }, 350);
     }
-    if (userChoice === "scissors" && computerChoice === "paper") {     
+    if (userChoice === "scissors" && computerChoice === "paper") {
         resultUserImage.src = `assets/images/${userChoice}.png`;
-        resultCompImage.src = `assets/images/${computerChoice}.png`; 
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
         scissorsButton.classList.add('correct-green');
-        setTimeout(function() { scissorsButton.classList.remove('correct-green') }, 350);  
+        setTimeout(function () {
+            scissorsButton.classList.remove('correct-green');
+        }, 350);
     }
 
     resultText.innerHTML = "You Win";
@@ -115,24 +122,30 @@ function loser(userChoice, computerChoice) {
     compScore++;
     userScoreSpan.innerHTML = userScore;
     compScoreSpan.innerHTML = compScore;
-    
+
     if (userChoice === "rock" && computerChoice === "paper") {
         resultUserImage.src = `assets/images/${userChoice}.png`;
         resultCompImage.src = `assets/images/${computerChoice}.png`;
         rockButton.classList.add('wrong-red');
-        setTimeout(function() { rockButton.classList.remove('wrong-red') }, 350);
+        setTimeout(function () {
+            rockButton.classList.remove('wrong-red');
+        }, 350);
     }
-    if (userChoice === "scissors" && computerChoice === "rock") {  
+    if (userChoice === "scissors" && computerChoice === "rock") {
         resultUserImage.src = `assets/images/${userChoice}.png`;
         resultCompImage.src = `assets/images/${computerChoice}.png`;
         scissorsButton.classList.add('wrong-red');
-        setTimeout(function() { scissorsButton.classList.remove('wrong-red') }, 350);           
+        setTimeout(function () {
+            scissorsButton.classList.remove('wrong-red');
+        }, 350);
     }
-    if (userChoice === "paper" && computerChoice === "scissors") {     
+    if (userChoice === "paper" && computerChoice === "scissors") {
         resultUserImage.src = `assets/images/${userChoice}.png`;
         resultCompImage.src = `assets/images/${computerChoice}.png`;
         paperButton.classList.add('wrong-red');
-        setTimeout(function() { paperButton.classList.remove('wrong-red') }, 350);
+        setTimeout(function () {
+            paperButton.classList.remove('wrong-red');
+        }, 350);
     }
 
     resultText.innerHTML = "You Lost";
@@ -143,22 +156,28 @@ function loser(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
 
     if (userChoice === "rock" && computerChoice === "rock") {
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
         rockButton.classList.add('draw-blue');
-        setTimeout(function() { rockButton.classList.remove('draw-blue') }, 350);
+        setTimeout(function () {
+            rockButton.classList.remove('draw-blue');
+        }, 350);
     }
-    if (userChoice === "paper" && computerChoice === "paper") {  
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`
+    if (userChoice === "paper" && computerChoice === "paper") {
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
         paperButton.classList.add('draw-blue');
-        setTimeout(function() { paperButton.classList.remove('draw-blue') }, 350);           
+        setTimeout(function () {
+            paperButton.classList.remove('draw-blue');
+        }, 350);
     }
-    if (userChoice === "scissors" && computerChoice === "scissors") {     
-        resultUserImage.src = `assets/images/${userChoice}.png`
-        resultCompImage.src = `assets/images/${computerChoice}.png`     
+    if (userChoice === "scissors" && computerChoice === "scissors") {
+        resultUserImage.src = `assets/images/${userChoice}.png`;
+        resultCompImage.src = `assets/images/${computerChoice}.png`;
         scissorsButton.classList.add('draw-blue');
-        setTimeout(function() { scissorsButton.classList.remove('draw-blue') }, 350);
+        setTimeout(function () {
+            scissorsButton.classList.remove('draw-blue');
+        }, 350);
     }
 
     resultText.innerHTML = "It's a Draw";
