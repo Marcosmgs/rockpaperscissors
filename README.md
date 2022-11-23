@@ -59,3 +59,34 @@ Rock, Paper, Scissors Game is a fully responsive JavaScrip game built to challen
 ### Features Left to Implement
 
 - Another feature idea would be to create a best of 3 game style in a 30sec game, where the user scores as many points as possible in 30sec in a best of 3 style. The highest score is the winner.
+
+## Testing 
+
+This game has been put through testing since the beginning and at every stage of the building, I made use of W3C and Jigsaw validator. In addition, Google Chrome developer tool was used for troubleshooting and console.log on screen for every code step through the java script for all the functionalities that were created.
+
+I used Google Chrome developer tool & Firefox inspector tool to make sure pages are responsive to different screen sizes and devices.
+
+During the building process, an error encountered was due to the variable used to generate a random number for the computer's choice. I had set a const and changed to let to fix this error.
+
+
+### Validator Testing 
+
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosmgs.github.io%2Frockpaperscissors%2F)
+
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarcosmgs.github.io%2Frockpaperscissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+    
+    - Metrics returned:
+      - There are 19 functions in this file.
+      - Function with the largest signature take 2 arguments, while the median is 0.
+      - Largest function has 19 statements in it, while the median is 1.
+      - The most complex function has a cyclomatic complexity value of 10 while the median is 1.
+
+
+### Unfixed Bugs
+
+No Unfixed Bugs left behind ;)
