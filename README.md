@@ -90,3 +90,16 @@ During the building process, an error encountered was due to the variable used t
 ### Unfixed Bugs
 
 No Unfixed Bugs left behind ;)
+
+## Deployment
+
+The site is deployed using GitHub Pages - [Rock, Paper, Scissors](https://marcosmgs.github.io/rockpaperscissors/).
+
+The steps to deploy are as follows: 
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [Marcosmgs/Rock, Paper, Scissors](https://github.com/Marcosmgs/rockpaperscissors).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
