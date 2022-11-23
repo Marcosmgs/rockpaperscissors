@@ -6,8 +6,6 @@ Rock, Paper, Scissors Game is a fully responsive JavaScrip game built to challen
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
 - __Rock Paper Scissors Title and Heading__
@@ -58,3 +56,6 @@ In this section, you should go over the different parts of your project, and des
 
 ![Reset Button](media/reset-game-button.png)
 
+### Features Left to Implement
+
+- Another feature idea would be to create a best of 3 game style in a 30sec game, where the user scores as many points as possible in 30sec in a best of 3 style. The highest score is the winner.
