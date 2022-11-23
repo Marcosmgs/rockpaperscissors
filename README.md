@@ -103,3 +103,11 @@ The steps to deploy are as follows:
 4. Select pages in the left hand navigation menu.
 5. From the source dropdown select main branch and press save.
 6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
+## Credits 
+
+### Content and Media 
+
+- The code for the user option buttons uses setTimeout to delay a style change on the buttons when clicked was taken from [Stack Overflow](https://stackoverflow.com/questions/44268612/use-settimeout-to-delay-a-style-change-on-a-button) 
+- The images used for the game results area were taken from the vector graphics section of the open source website [Pixa Bay](https://pixabay.com/)
+- The icons on the badges and user choice buttons were taken from [Font Awesome](https://fontawesome.com/)
