@@ -1,6 +1,10 @@
 # Rock, Paper, Scissors
 
-Rock, Paper, Scissors Game is a fully responsive JavaScrip game built to challenge players looking to beat a computer algorithm by playing against the machine where random computer choices are generated, which makes it impossible to gain an advantage over an opponent that chooses their move uniformly at random. making this game a great challenge as it differentiate to person vs person game, where it is possible to gain a significant advantage over a non-random player by predicting their move, which can be done by exploiting psychological effects or by analyzing statistical patterns of their past behavior. Therefore, this game is built to bring fairness to a game that dates back to the Han dynasty (206 BCE – 220 CE), all in a colorful interface with modern design and a great user experience!
+Rock, Paper, Scissors is a game that dates back to the Han Dinasty. People would play against each other face to face. The fact that it was face to face made it unfair, because people were able to predict each others' moves by reading their body language. 
+For that reason, I decided to create this fully responsive JavaScrip game, where is not possible to take advantage of your oponent. 
+This is build to challenge players that are looking to beat a computer algorithm. 
+They play against the machine and random choices are generated, so it is impossible to anticipate. 
+Users can also enjoy a colorful interface with modern design and a great user experience.
 
 ![Responsive Mockup Diferent Screens Sizes](media/mockup-screens-sizes.png)
 
@@ -10,13 +14,13 @@ Rock, Paper, Scissors Game is a fully responsive JavaScrip game built to challen
 
 - __Rock Paper Scissors Title and Heading__
 
-  - Featured on all displays, the start and main game at the top of the page, the game title heading easily to the hit of the user's eyes, first thing the users sees when access the initial game display and following the main game display which will be featuring the same game title heading.
-
+  - Featured on all displays, the start and main game on top of the page. The game title heading at user's eye-level. First thing the users see when they access the initial game display & throughout.
+  
 ![Game Title Heading](media/header-title.png)
 
 - __Start Game Button__
 
-  - Featured on the first game display, the start button will give a sense of break between displays to the user, whereas before the users hit the start button, the user has a display showing game rules on the footer and the game title on the head, after pressing the start button, it sets on display ll the game features. The Start button changes colors when users hover over to give a sense of readiness to be pressed and improve user experience.
+  - Featured only on the first game display, the start button will give a sense of break between displays to the user, after pressing the start button, it sets on display all the game features. The Start button changes colors when users hover over to give a sense of readiness to be pressed and improve user experience.
 
 ![Start Game](media/start-button.png)
 
